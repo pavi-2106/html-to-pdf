@@ -8,13 +8,12 @@ error_reporting(E_ALL);
 $htmlimgContent = '
 <style>
 .img-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
+    display: flex;  
 }
 
 .img {
-    align-self: center;
+    margin:10px;
+    padding:10px;
 }
 </style>
 ';
@@ -62,6 +61,16 @@ $tempBodyHtml = '
     height:50px;
 }
 
+.tbl_willing_exp, .tbl_willing_exp th, .tbl_willing_exp td {  
+    border-collapse: collapse;
+     padding: 5px;
+    }
+
+.tbl_gk, .tbl_gk th, .tbl_gk td {  
+    border-collapse: collapse;
+     padding: 5px;
+}
+
 </style>';
 
 
@@ -73,11 +82,11 @@ $htmlimgContent .= '
 ';
 
 $tempBodyHtml .= '
-<h1 style="text-align:center;"><strong>印尼女佣资料表</strong></h1>
+<h1 style="text-align:center; margin:0px;"><strong>印尼女佣资料表</strong></h1>
 ';
 
 $tempBodyHtml .= '
-<h1 style="text-align:center;"><strong><u> APPLICANT’S  QUALIFICATION HIGHLIGHTS</u></strong></h1>
+<h1 style="text-align:center; margin-top:10px;"><strong><u> APPLICANT’S  QUALIFICATION HIGHLIGHTS</u></strong></h1>
 <br>
 ';
 
@@ -236,7 +245,7 @@ $tempBodyHtml .= '
 
     <tr>
         <td colspan="2" style="text-align:left;">
-             CONTACT NUMBER:834769379
+            Recommended for: (“X” means she can)
         </td>
     </tr> 
 
@@ -626,7 +635,7 @@ $tempBodyHtml .= '
 //TABLE PREVIOUS EMPLOYMENT HISTORY
 $tempBodyHtml .= '
 
-<table style="width:100%;" class="tblpeh">
+<table style="width:100%; margin-right:20px;" class="tblpeh">
     <tr>
         <td colspan="4" style="text-align:center;">
             <strong>
@@ -762,14 +771,432 @@ $tempBodyHtml .= '
     ';
 
 $tempBodyHtml .= '
-<p style="text-align=center;">Please answer by (Yes) or (No) below to show which at the following duties you are willing to undertake and
+<p style="text-align=left; font-size: larger; margin-left:20px;">Please answer by (Yes) or (No) below to show which at the following duties you are willing to undertake and
 which you have had experience of:-</p>
 <br>
 ';
 
 
 
+//tbl_willing_exp
+$tempBodyHtml .= '
+<table class="tbl_willing_exp" style="width:100%">
+    <tr>
+        <td colspan="2" style="text-align:left; width:30%">
+            
+        </td>
+        <td style="text-align:center; width:10%">
+            Willing
+            <br>
+            愿意
+        </td>
+        <td style="text-align:center; width:10%">
+            Exp
+            <br>
+            有经验
+        </td>
+        <td colspan="2" style="text-align:left; width:30%">
+           
+        </td>
+        <td style="text-align:center; width:10%">
+            Willing
+            <br>
+            愿意
+        </td>
+        <td style="text-align:center; width:10%">
+            Exp
+            <br>
+            有经验
+        </td>   
+    </tr>
+    
 
+    
+    <tr>
+        <td colspan="2" style="text-align:left; width:30%">
+            1.Care of babies aged 0-3 Months.
+            <br>
+            照顾 0-3 个月婴儿
+        </td>
+        <td style="text-align:center; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; width:10%">
+            <input type="checkbox">
+        </td>
+        <td colspan="2" style="text-align:left; width:30%">
+            9.Operate Vacuum Cleaner
+            <br>
+            吸尘机操作
+        </td>
+        <td style="text-align:center; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; width:10%">
+            <input type="checkbox">
+        </td>   
+    </tr>
+
+
+
+    <tr>
+        <td colspan="2" style="text-align:left; width:30%">
+            2.Care of babies aged 3-12 Months.  
+            <br>
+            照顾 3-12 个月婴儿
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td colspan="2" style="text-align:left; width:30%">
+            10.Operate Microwave Oven
+            <br>
+            微波炉操作
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>   
+    </tr>
+
+
+    <tr>
+        <td colspan="2" style="text-align:left; width:30%">
+            3.Care of children aged 1-5 Years.  
+            <br>
+            照顾年龄 1-5 岁孩子
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td colspan="2" style="text-align:left; width:30%">
+            11.Washing Laundry By Hand
+            <br>
+            用手洗衣服
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>   
+    </tr>
+
+
+    <tr>
+        <td colspan="2" style="text-align:left; width:30%">
+            4.Care of children aged 5-10 Years.
+            <br>
+            照顾年龄 5-10 岁小孩
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td colspan="2" style="text-align:left; width:30%">
+            12.Ironing
+            <br>
+            熨衣服
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>   
+    </tr>
+    
+
+    <tr>
+    <td colspan="2" style="text-align:left; width:30%">
+        5.Care of children over 10 Years.
+        <br>
+        照顾年龄 10 岁以上小孩
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>
+    <td colspan="2" style="text-align:left; width:30%">
+        13.General Cooking
+        <br>
+        简单烹饪
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>   
+</tr>
+
+
+<tr>
+    <td colspan="2" style="text-align:left; width:30%">
+        6.Care of Invalid.
+        <br>
+        照顾残弱人士
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>
+    <td colspan="2" style="text-align:left; width:30%">
+        14.Care of Elderly
+        <br>
+        照顾老人
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>   
+</tr>
+
+
+
+<tr>
+    <td colspan="2" style="text-align:left; width:30%">
+        7.General Housework
+        <br>
+        一般家务工作
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>
+    <td colspan="2" style="text-align:left; width:30%">
+        15.Care of Pets ( Cat / Dog)
+        <br>
+        照顾猫 / 狗
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>   
+</tr>
+
+
+
+<tr>
+    <td colspan="2" style="text-align:left; width:30%">
+        8.Operate Washing Machine
+        <br>
+        洗衣机操作
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>
+    <td colspan="2" style="text-align:left; width:30%">
+        16.Wash Car
+        <br>
+        清洁车辆
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>
+    <td style="text-align:center; border-bottom:1px solid black; width:10%">
+        <input type="checkbox">
+    </td>   
+</tr>
+</table>
+';   
+
+
+//general informations
+$tempBodyHtml .= '
+<h1 style="text-align:center;"><strong><u><i> GENERAL INFORMATION </i></u></strong></h1>
+<br>
+';
+
+// table general information
+$tempBodyHtml .= '
+<table class="tbl_gk" style="width:100%">
+    <tr>
+        <td style="text-align:center; width:80%">
+            <strong>QUESTIONS</strong>
+        </td>
+        <td style="text-align:center; width:10%">
+            <strong>YES</strong>
+        </td>
+        <td style="text-align:center; width:10%">
+            <strong>NO</strong>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align:left; width:80%">
+            1.Can you promise not to use the telephone without your employer’s permission?
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align:left; width:80%">
+            2.Are you prepared to eat the type of food that your employer provides?
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align:left; width:80%">
+            3. Are you willing to accept the non-working days set up by your employer?
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align:left; width:80%">
+            4. Can you promise NOT to ask for an advance salary from your employer?
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align:left; width:80%">
+            5. Do you smoke?
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align:left; width:80%">
+            6.Have you undergone any operation before?
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align:left; width:80%">
+            7.Do you suffer from any skin disease?
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align:left; width:80%">
+            8.Are you willing to prepare / handle pork?
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black;  width:10%">
+            <input type="checkbox">
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align:left; width:80%">
+            9.Can you eat pork?
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align:left; width:80%">
+            10.Are you willing to work overtime with compensation?
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align:left; width:80%">
+            11.Are you willing to share a room with children or an elderly?
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+        <td style="text-align:center; border-bottom:1px solid black; width:10%">
+            <input type="checkbox">
+        </td>
+    </tr>
+
+</table>
+';
+
+//confirmation
+$tempBodyHtml .= '
+<p style="text-align=left; font-size: larger; margin-left:20px; margin-top:40px;">
+I hereby confirm that all the information and answers given are true and correct and that any deliberate
+falsification of information may result in my being repatriated back to the country of origin at my own expense.
+</p>
+<br>
+';
+
+$tempBodyHtml .= '
+
+    <p>Interviewee’s Signature</p>
+    <p>Date</p>
+        
+        
+';
 
 use Spipu\Html2Pdf\Html2Pdf;
 
