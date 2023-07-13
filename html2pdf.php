@@ -71,6 +71,10 @@ $tempBodyHtml = '
      padding: 5px;
 }
 
+.tbl_sign, .tbl_sign th, .tbl_sign td {  
+    border-collapse: collapse;
+     padding: 5px;
+}
 </style>';
 
 
@@ -1190,12 +1194,36 @@ falsification of information may result in my being repatriated back to the coun
 <br>
 ';
 
-$tempBodyHtml .= '
 
-    <p>Interviewee’s Signature</p>
-    <p>Date</p>
-        
-        
+
+
+
+//tbl_sign
+$tempBodyHtml .= '
+<table class="tbl_sign" style="width:100%; margin-left:50px;">
+
+    <tr>
+        <td style="width:50%;"><p>_______________________</p></td>
+        <td style="width:50%;"><p  style="margin-left:40px;">________________________</p></td>
+    </tr>
+    <tr>
+        <td style="width:50%;"> <p>Interviewee’s Signature</p></td>
+        <td style="width:50%;"><p  style="margin-left:40px;">Date:</p></td>
+    </tr>
+
+    <tr>
+        <td style="width:50%;"><p>_______________________</p></td>
+        <td style="width:50%;"><p  style="margin-left:40px;">_______________________</p></td>
+    </tr>
+    <tr>
+        <td style="width:50%;"> <p>Interviewer’s Signature</p></td>
+        <td style="width:50%;"><p   style="margin-left:40px;">Date:</p></td>
+    </tr>
+    
+</table>
+
+
+                
 ';
 
 use Spipu\Html2Pdf\Html2Pdf;
