@@ -24,7 +24,7 @@ $tempBodyHtml .= "<h3><strong>OFFICIAL INVOICE</strong></h3>
             <td style='text-align:left;'>
                 Date
             </td>
-            <td style='text-align:left;'>
+            <td style='text-align:left;'> 
                 : " . date('d-m-Y', strtotime($invDate)) . "
             </td>
         </tr>

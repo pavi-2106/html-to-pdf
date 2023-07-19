@@ -92,11 +92,11 @@ $htmlimgContent .= '
 ';
 
 $tempBodyHtml .= '
-<h1 style="text-align:center; margin:0px;"><strong>印尼女佣资料表</strong></h1>
+<h1 style="text-align:center; margin:0;"><strong>印尼女佣资料表</strong></h1>
 ';
 
 $tempBodyHtml .= '
-<h1 style="text-align:center; margin-top:10px;"><strong><u> APPLICANT’S  QUALIFICATION HIGHLIGHTS</u></strong></h1>
+<h1 style="text-align:center;  margin:0;"><strong><u> APPLICANT’S  QUALIFICATION HIGHLIGHTS</u></strong></h1>
 <br>
 ';
 
@@ -106,9 +106,9 @@ $tempBodyHtml .= '
 //tblinvitem
 $tempBodyHtml .= '
 
-<table style="border-collapse: collapse; width: 100%;">
+<table style="border-collapse: collapse; width: 100%; margin-top:0;">
     <tbody>
-        <tr style="margin-bottom:0;">
+        <tr style="margin-bottom:0; height:50%;">
 
             <td style="width: 50%;">
 
@@ -316,14 +316,14 @@ $tempBodyHtml .= '
 
 
 
-        <tr style="margin-bottom:0px;">
+        <tr style="margin-bottom:0px; height:50%;">
 
-            <td style="width:50%;">
+            <td style="width:50%;  height:50%;">
 
                     <table style="width:15%; margin-left:20px;">
                         <tr>
                             <td>
-                                <textarea id="w3review" name="w3review" rows="40" cols="40">.</textarea>
+                                <textarea id="w3review" name="w3review" rows="30" cols="40">.</textarea>
                             </td>
                         </tr>
                     </table>
@@ -331,14 +331,14 @@ $tempBodyHtml .= '
             </td>
 
 
-            <td style="width:50%;">
+            <td style="width:50%; height:50%;">
 
 
                     <table style="width:95%; height:50%;" class="tblinterview">
 
                     <tr>
                         <td colspan="5" style="text-align:center;">    
-                            <strong><h3><i>面 试 评 价 Interview Appraisal</i></h3></strong>
+                            <strong><h5><i>面 试 评 价 Interview Appraisal</i></h5></strong>
                         </td>   
                     </tr>
 
@@ -347,23 +347,19 @@ $tempBodyHtml .= '
                             
                         </td>
                         <td style="text-align:center; width:15%">
-                            差
-                            <br>
+
                             Poor
                         </td>
                         <td style="text-align:center; width:15%">
-                            平
-                            <br>
+                           
                             Fair
                         </td>
                         <td style="text-align:center; width:15%">
-                            好
-                            <br>
+                            
                             GD
                         </td>
                         <td style="text-align:center; width:15%">
-                            优
-                            <br>
+                            
                             V.GD
                         </td>
                     </tr> 
@@ -371,8 +367,7 @@ $tempBodyHtml .= '
 
                     <tr>
                         <td style="text-align:center; width:40%">
-                            护理婴儿
-                            <br>
+                            
                             Care of Babies
                         </td>
                         <td style="text-align:center; width:15%">
@@ -392,8 +387,7 @@ $tempBodyHtml .= '
 
                     <tr>
                         <td style="text-align:center; width:40%">
-                            护理儿童
-                            <br>
+                           
                             Care of Young Children
                         </td>
                         <td style="text-align:center; width:15%">
@@ -413,8 +407,7 @@ $tempBodyHtml .= '
 
                     <tr>
                         <td style="text-align:center; width:40%">
-                            家务
-                            <br>
+                            
                             Household Work
                         </td>
                         <td style="text-align:center; width:15%">
@@ -434,8 +427,7 @@ $tempBodyHtml .= '
 
                     <tr>
                         <td style="text-align:center; width:40%">
-                            个性表现
-                            <br>
+                           
                             Personality
                         </td>
                         <td style="text-align:center; width:15%">
@@ -455,8 +447,7 @@ $tempBodyHtml .= '
 
                     <tr>
                         <td style="text-align:center; width:40%">
-                            仪容
-                            <br>
+                           
                             Facial Expression
                         </td>
                         <td style="text-align:center; width:15%">
@@ -476,8 +467,7 @@ $tempBodyHtml .= '
 
                     <tr>
                         <td style="text-align:center; width:40%">
-                            护理老人
-                            <br>
+                            
                             Care of Elderly / Disable
                         </td>
                         <td style="text-align:center; width:15%">
@@ -497,8 +487,7 @@ $tempBodyHtml .= '
 
                     <tr>
                         <td style="text-align:center; width:40%">
-                            女佣经验
-                            <br>
+                            
                             Housemaid Exp.
                         </td>
                         <td style="text-align:center; width:15%">
@@ -518,8 +507,7 @@ $tempBodyHtml .= '
 
                     <tr>
                         <td style="text-align:center; width:40%">
-                            能说英文
-                            <br>
+                           
                             Spoken English
                         </td>
                         <td style="text-align:center; width:15%">
@@ -539,8 +527,7 @@ $tempBodyHtml .= '
 
                     <tr>
                         <td style="text-align:center; width:40%">
-                            能说华文
-                            <br>
+                           
                             Spoken Mandarin
                         </td>
                         <td style="text-align:center; width:15%">
@@ -560,8 +547,7 @@ $tempBodyHtml .= '
 
                     <tr>
                         <td style="text-align:center; width:40%">
-                            明白英文
-                            <br>
+                            
                             Understand Eng,
                         </td>
                         <td style="text-align:center; width:15%">
@@ -581,8 +567,7 @@ $tempBodyHtml .= '
 
                     <tr>
                         <td style="text-align:center; width:40%">
-                            明白华文
-                            <br>
+                           
                             Understand Mandarin
                         </td>
                         <td style="text-align:center; width:15%">
@@ -602,8 +587,7 @@ $tempBodyHtml .= '
 
                     <tr>
                         <td style="text-align:center; width:40%">
-                            其他语言
-                            <br>
+                           
                             Other Language
                         </td>
                         <td style="text-align:center; width:15%">
@@ -623,8 +607,7 @@ $tempBodyHtml .= '
 
                     <tr>
                         <td style="text-align:center; width:40%">
-                            怕狗
-                            <br>
+                            
                             Afraid of Dog
                         </td>
                         <td colspan="2" style="text-align:left; width:30%">
@@ -639,8 +622,7 @@ $tempBodyHtml .= '
 
                     <tr>
                         <td style="text-align:center; width:40%">
-                            照顾狗的经验
-                            <br>
+                           
                             Exp. Taking Care of Dog
                         </td>
                         <td colspan="2" style="text-align:left; width:30%">
