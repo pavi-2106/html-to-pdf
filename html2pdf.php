@@ -13,7 +13,7 @@ $htmlimgContent = '
 
 .img {
     margin:10px;
-    padding:10px;
+    
 }
 </style>
 ';
@@ -63,18 +63,24 @@ $tempBodyHtml = '
     border-collapse: collapse;
     border: 1px solid;
     padding: 5px;
-    margin:5px;
-    height:40px;
+    margin:40px;
+    height:35px;
+    margin-bottom:0;
 }
 
 .tbl_willing_exp, .tbl_willing_exp th, .tbl_willing_exp td {  
     border-collapse: collapse;
      padding: 5px;
+     margin:40px;
+     margin-top:0;
+     margin-bottom:40px;
     }
 
 .tbl_gk, .tbl_gk th, .tbl_gk td {  
     border-collapse: collapse;
-     padding: 5px;
+    padding: 5px;
+    margin:40px;
+    margin-top:0;
 }
 
 .tbl_sign, .tbl_sign th, .tbl_sign td {  
@@ -86,8 +92,8 @@ $tempBodyHtml = '
 
 // Image
 $htmlimgContent .= '
-<div class="img-container">
-    <img src="/var/www/html/html-to-pdf/pic.jpeg" alt="Image description" class="img">
+<div class="img-container" >
+    <img src="/var/www/html/html-to-pdf/pic.jpeg" alt="Image description" class="img" style="width:97%;">
 </div>
 ';
 
@@ -106,13 +112,13 @@ $tempBodyHtml .= '
 //tblinvitem
 $tempBodyHtml .= '
 
-<table style="border-collapse: collapse; width: 100%; margin-top:0;">
+<table style="border-collapse: collapse; width: 100%; ">
     <tbody>
         <tr style="margin-bottom:0; height:50%;">
 
             <td style="width: 50%;">
 
-                        <table style="width:50%;" class="tblInvItem">
+                        <table style="width:60%; margin-left:40px;" class="tblInvItem">
                         <tr>
                             <td style="text-align:left;">
                                 Name 姓名:
@@ -320,15 +326,16 @@ $tempBodyHtml .= '
 
             <td style="width:50%;  height:50%;">
 
-                    <table style="width:15%; margin-left:20px;">
+                    <table style="width:60%; margin-left:40px; border-collapse: collapse; border: 1px solid;">
                         <tr>
                             <td>
-                                <textarea id="w3review" name="w3review" rows="30" cols="40">.</textarea>
+                                <textarea id="w3review" name="w3review" rows="34" cols="40">.</textarea>
                             </td>
                         </tr>
                     </table>
                     
             </td>
+
 
 
             <td style="width:50%; height:50%;">
@@ -647,7 +654,7 @@ $tempBodyHtml .= '
 //TABLE PREVIOUS EMPLOYMENT HISTORY
 $tempBodyHtml .= '
 
-<table style="width: 90%; margin-left:20px;" class="tblpeh">
+<table style="width: 85%; margin-left:40px;" class="tblpeh">
     <tr>
         <td colspan="4" style="text-align:center;">
             <strong>
@@ -783,7 +790,7 @@ $tempBodyHtml .= '
     ';
 
 $tempBodyHtml .= '
-<p style="text-align=left; font-size: larger; margin-left:20px;">Please answer by (Yes) or (No) below to show which at the following duties you are willing to undertake and
+<p style="text-align=left; font-size: larger; margin-left:40px;">Please answer by (Yes) or (No) below to show which at the following duties you are willing to undertake and
 which you have had experience of:-</p>
 <br>
 ';
@@ -792,7 +799,7 @@ which you have had experience of:-</p>
 
 //tbl_willing_exp
 $tempBodyHtml .= '
-<table class="tbl_willing_exp" style="width:100%">
+<table class="tbl_willing_exp" style="width:90%">
     <tr>
         <td colspan="2" style="text-align:left; width:30%">
             
@@ -1039,13 +1046,13 @@ $tempBodyHtml .= '
 
 //general informations
 $tempBodyHtml .= '
-<h1 style="text-align:center;"><strong><u><i> GENERAL INFORMATION </i></u></strong></h1>
 <br>
+<h1 style="text-align:center; margin:40px; margin-top:40px;"><strong><u><i> GENERAL INFORMATION </i></u></strong></h1>
 ';
 
 // table general information
 $tempBodyHtml .= '
-<table class="tbl_gk" style="width:100%">
+<table class="tbl_gk" style="width:90%;">
     <tr>
         <td style="text-align:center; width:80%">
             <strong>QUESTIONS</strong>
@@ -1195,7 +1202,7 @@ $tempBodyHtml .= '
 
 //confirmation
 $tempBodyHtml .= '
-<p style="text-align=left; font-size: larger; margin-left:20px; margin-top:40px;">
+<p style="text-align=left; font-size: larger; margin-left:40px; margin-top:40px; margin-right:30px;">
 I hereby confirm that all the information and answers given are true and correct and that any deliberate
 falsification of information may result in my being repatriated back to the country of origin at my own expense.
 </p>
